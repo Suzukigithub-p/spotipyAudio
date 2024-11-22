@@ -1,0 +1,24 @@
+{%extends "base.html" %}
+{% block body %}
+
+<h2> {{the_title}} </h2>
+
+<form method='POST' action="trackAnalysis">
+    <table>
+        <p>track</p>
+        <tr><td><input name="URL" type="text" value="https://open.spotify.com/intl-ja/track/1vvpFd7pRLCl5aVIjB2IT6?si=f40e201a7222472f"></td></tr>
+    </table>
+
+    <p><input value="run" type="submit"></p>
+</form>
+
+<form method='POST' action="playlistAnalysis">
+    <table>
+        <p>playlist</p>
+        <tr><td><input name="URL" type="text" value="https://open.spotify.com/playlist/37i9dQZF1DZ06evO2wNuKI?si=VijIz_y9RkCV5fVI-R18Qw"></td></tr>
+    </table>
+
+    <p><input value="run" type="submit"></p>
+</form>
+
+{% endblock %}

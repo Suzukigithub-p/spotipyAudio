@@ -1,0 +1,19 @@
+{%extends "base.html" %}
+{% block body %}
+
+<h2> {{the_title}} </h2>
+<p>{{playlistName}}</p>
+
+{{html}}
+<h2>{{keysSum}}</h2>
+
+<button onclick="goBack()">前のページに戻る</button>
+
+<script>
+	function goBack() {
+		window.history.back();  //もしくはhistory.forward()
+	}
+</script>
+
+
+{% endblock %}
